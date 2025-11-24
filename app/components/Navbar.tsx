@@ -31,20 +31,6 @@ export default function Navbar() {
           Get Audit
         </a>
       </nav>
-      <div className="flex items-center gap-4">
-        <Link
-          href="#contact"
-          className="hidden sm:block px-4 py-2 text-sm font-medium text-white transition-colors hover:text-playwright"
-        >
-          Contact
-        </Link>
-        <Link
-          href="#audit"
-          className="px-5 py-2 text-sm font-bold text-white bg-orange rounded-full hover:bg-orange/90 transition-colors shadow-[0_0_20px_-5px_rgba(255,87,34,0.5)]"
-        >
-          Get Audit
-        </Link>
-      </div>
     </motion.nav>
   );
 }
