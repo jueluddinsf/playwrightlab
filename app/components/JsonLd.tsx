@@ -4,12 +4,12 @@ export default function JsonLd() {
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://playwrightlab.com/#organization",
+                "@id": "https://playwrightlab.io/#organization",
                 "name": "PlaywrightLab LLC",
-                "url": "https://playwrightlab.com",
+                "url": "https://playwrightlab.io",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://playwrightlab.com/logo.png"
+                    "url": "https://playwrightlab.io/logo.png"
                 },
                 "sameAs": [
                     "https://twitter.com/playwrightlab",
@@ -26,11 +26,11 @@ export default function JsonLd() {
             },
             {
                 "@type": "ProfessionalService",
-                "@id": "https://playwrightlab.com/#service",
+                "@id": "https://playwrightlab.io/#service",
                 "name": "Playwright Migration Services",
-                "url": "https://playwrightlab.com",
+                "url": "https://playwrightlab.io",
                 "provider": {
-                    "@id": "https://playwrightlab.com/#organization"
+                    "@id": "https://playwrightlab.io/#organization"
                 },
                 "description": "Expert migration from Selenium/Cypress to Playwright test automation framework.",
                 "areaServed": "Worldwide",

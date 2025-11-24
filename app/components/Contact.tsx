@@ -21,11 +21,11 @@ export default function Contact() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <a
-                            href="mailto:hello@playwrightlab.com"
+                            href="mailto:hello@playwrightlab.io"
                             className="flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black font-bold hover:bg-zinc-200 transition-colors"
                         >
                             <Mail size={20} />
-                            hello@playwrightlab.com
+                            hello@playwrightlab.io
                         </a>
                         <a
                             href="https://twitter.com/playwrightlab"

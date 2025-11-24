@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return [
         {
-            url: 'https://playwrightlab.com',
+            url: 'https://playwrightlab.io',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 1,

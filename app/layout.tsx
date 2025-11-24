@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : 'https://playwrightlab.com'),
+  metadataBase: new URL(process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : 'https://playwrightlab.io'),
   title: {
     default: "PlaywrightLab LLC | High-Velocity Automation Migrations",
     template: "%s | PlaywrightLab LLC"
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://playwrightlab.com",
+    url: "https://playwrightlab.io",
     title: "PlaywrightLab LLC | High-Velocity Automation Migrations",
     description: "Expert Playwright migration services. We convert legacy Selenium/Cypress suites to reliable, high-velocity Playwright automation.",
     siteName: "PlaywrightLab LLC",

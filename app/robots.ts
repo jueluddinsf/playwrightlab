@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://playwrightlab.com/sitemap.xml',
+        sitemap: 'https://playwrightlab.io/sitemap.xml',
     }
 }
