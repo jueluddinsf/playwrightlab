@@ -277,7 +277,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                     <div
                         className="prose-headings:font-display prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-zinc-300 prose-p:leading-relaxed prose-a:text-playwright prose-a:no-underline hover:prose-a:underline prose-code:text-playwright prose-code:bg-white/5 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-white/10 prose-table:border-collapse prose-th:border prose-th:border-white/10 prose-th:bg-white/5 prose-th:p-3 prose-td:border prose-td:border-white/10 prose-td:p-3"
                         dangerouslySetInnerHTML={{
-                            __html: post.content.split('\n').map(line => {
+                            __html: post.content.split('\n').map((line: string) => {
                                 if (line.startsWith('# ')) return `<h1>${line.substring(2)}</h1>`;
                                 if (line.startsWith('## ')) return `<h2>${line.substring(3)}</h2>`;
                                 if (line.startsWith('### ')) return `<h3>${line.substring(4)}</h3>`;
