@@ -40,9 +40,7 @@ export default function Audit() {
                     </ul>
 
                     <a
-                        href="https://cal.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="/schedule"
                         className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-orange rounded-full hover:bg-orange/90 transition-all hover:scale-105 shadow-[0_0_30px_-10px_rgba(255,87,34,0.6)]"
                     >
                         Schedule Your Audit
