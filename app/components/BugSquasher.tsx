@@ -100,10 +100,10 @@ export default function BugSquasher() {
 
   return (
     <>
-      {/* Score counter - Responsive positioning */}
-      <div className="fixed top-20 right-3 sm:top-24 sm:right-6 z-50 bg-playwright/20 backdrop-blur-sm border border-playwright/30 rounded-lg px-3 py-1.5 sm:px-4 sm:py-2">
-        <div className="text-xs sm:text-sm text-playwright/70">Bugs Squashed</div>
-        <div className="text-xl sm:text-2xl font-bold text-playwright">{score}</div>
+      {/* Score counter - Compact */}
+      <div className="fixed top-20 right-3 sm:top-24 sm:right-6 z-50 bg-playwright/20 backdrop-blur-sm border border-playwright/30 rounded-lg px-2.5 py-1.5 sm:px-3 sm:py-2 flex items-center gap-2">
+        <div className="text-[10px] sm:text-xs text-playwright/70 uppercase tracking-wide">Bugs</div>
+        <div className="text-lg sm:text-xl font-bold text-playwright">{score}</div>
       </div>
 
       {/* Bugs */}

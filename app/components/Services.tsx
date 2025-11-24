@@ -19,16 +19,16 @@ const ServiceCard = ({ title, description, icon: Icon, delay = 0 }: any) => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay }}
-        className="group relative p-6 rounded-2xl bg-zinc-900/40 border border-white/10 hover:border-playwright/30 hover:bg-zinc-900/60 transition-all duration-300 overflow-hidden flex flex-col h-full"
+        className="group relative p-5 sm:p-6 rounded-2xl bg-zinc-900/40 border border-white/10 hover:border-playwright/30 hover:bg-zinc-900/60 transition-all duration-300 overflow-hidden flex flex-col h-full"
     >
         <div className="absolute inset-0 bg-gradient-to-br from-playwright/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
         <div className="relative z-10 flex-1">
-            <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-playwright/20 group-hover:text-playwright transition-all duration-300 text-zinc-400">
+            <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 group-hover:bg-playwright/20 group-hover:text-playwright transition-all duration-300 text-zinc-400">
                 <Icon size={20} />
             </div>
 
-            <h3 className="text-lg font-bold text-white mb-2 font-display">{title}</h3>
+            <h3 className="text-base sm:text-lg font-bold text-white mb-2 font-display">{title}</h3>
             <p className="text-sm text-zinc-400 leading-relaxed">{description}</p>
         </div>
     </motion.div>
@@ -84,11 +84,11 @@ const services = [
 
 export default function Services() {
     return (
-        <section id="services" className="py-24 relative bg-black/50">
-            <div className="container mx-auto px-6">
-                <div className="mb-16 text-center max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Complete Test Automation Services</h2>
-                    <p className="text-zinc-400 text-lg">
+        <section id="services" className="py-16 sm:py-24 relative bg-black/50">
+            <div className="container mx-auto px-4 sm:px-6">
+                <div className="mb-12 sm:mb-16 text-center max-w-3xl mx-auto">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-display">Complete Test Automation Services</h2>
+                    <p className="text-zinc-400 text-base sm:text-lg">
                         From migration strategy to implementation, we help you build robust test automation tailored to your needs.
                     </p>
                 </div>

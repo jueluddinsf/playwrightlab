@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const CodeBlock = ({ title, code, isBad = false }: { title: string; code: string; isBad?: boolean }) => (
     <div className={`rounded-xl border ${isBad ? "border-red-500/20 bg-red-950/10" : "border-playwright/20 bg-playwright/5"} overflow-hidden`}>
-        <div className={`px-4 py-2 text-xs font-mono flex items-center gap-2 border-b ${isBad ? "border-red-500/20 text-red-400" : "border-playwright/20 text-playwright"}`}>
-            <Terminal size={12} />
-            {title}
+        <div className={`px-3 sm:px-4 py-2 text-[10px] sm:text-xs font-mono flex items-center gap-2 border-b ${isBad ? "border-red-500/20 text-red-400" : "border-playwright/20 text-playwright"}`}>
+            <Terminal size={12} className="flex-shrink-0" />
+            <span className="truncate">{title}</span>
         </div>
-        <div className="p-4 overflow-x-auto">
-            <pre className="text-xs sm:text-sm font-mono leading-relaxed text-zinc-300">
+        <div className="p-3 sm:p-4 overflow-x-auto">
+            <pre className="text-[10px] sm:text-xs md:text-sm font-mono leading-relaxed text-zinc-300">
                 <code>{code}</code>
             </pre>
         </div>
@@ -20,12 +20,12 @@ const CodeBlock = ({ title, code, isBad = false }: { title: string; code: string
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <section className="relative min-h-screen flex items-center pt-20 pb-12 sm:pb-0 overflow-hidden">
             {/* Background Gradients */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-playwright/20 blur-[120px] rounded-full opacity-30 pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-[800px] h-[600px] bg-orange/10 blur-[100px] rounded-full opacity-20 pointer-events-none" />
 
-            <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div className="container mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -38,12 +38,12 @@ export default function Hero() {
                         NYC-Based Test Automation Specialists
                     </div>
 
-                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 font-display">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4 sm:mb-6 font-display leading-tight">
                         Stop Debugging <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange">Flaky Tests.</span>
                     </h1>
 
-                    <p className="text-lg sm:text-xl text-zinc-400 mb-8 max-w-lg leading-relaxed">
+                    <p className="text-base sm:text-lg md:text-xl text-zinc-400 mb-6 sm:mb-8 max-w-lg leading-relaxed">
                         Expert migration services from Selenium/Cypress to <span className="text-white font-semibold">Playwright</span>.
                         We help engineering teams build reliable, maintainable test automation.
                     </p>
@@ -64,13 +64,13 @@ export default function Hero() {
                         </Link>
                     </div>
 
-                    <div className="mt-12 flex items-center gap-8 text-sm text-zinc-500">
+                    <div className="mt-8 sm:mt-12 flex flex-wrap items-center gap-4 sm:gap-8 text-xs sm:text-sm text-zinc-500">
                         <div className="flex items-center gap-2">
-                            <Check size={16} className="text-playwright" />
+                            <Check size={16} className="text-playwright flex-shrink-0" />
                             <span>Reduced Flakiness</span>
                         </div>
                         <div className="flex items-center gap-2">
-                            <Check size={16} className="text-playwright" />
+                            <Check size={16} className="text-playwright flex-shrink-0" />
                             <span>Faster Test Execution</span>
                         </div>
                     </div>
