@@ -1,16 +1,12 @@
 run = "npm install && npm run dev"
 entrypoint = "app/page.tsx"
-modules = ["nodejs-20", "web", "nix"]
 
 [nix]
-channel = "stable-25_05"
+channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "npm install && npm run build && npm start"]
 
 [env]
-
-[agent]
-expertMode = true
 # Set environment variables if needed
 # NODE_ENV = "development"
