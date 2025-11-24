@@ -1,8 +1,11 @@
-run = "npm run dev"
+run = "npm install && npm run dev"
 entrypoint = "app/page.tsx"
 
 [nix]
 channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npm install && npm run build && npm start"]
 
 [env]
 # Set environment variables if needed
