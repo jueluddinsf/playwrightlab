@@ -23,9 +23,9 @@ export default function SchedulePage() {
           let d = C.document;
           C.Cal =
             C.Cal ||
-            function () {
+            function (...args: any[]) {
               let cal = C.Cal;
-              let ar = arguments;
+              let ar = args;
               if (!cal.loaded) {
                 cal.ns = {};
                 cal.q = cal.q || [];
@@ -33,8 +33,8 @@ export default function SchedulePage() {
                 cal.loaded = true;
               }
               if (ar[0] === L) {
-                const api: any = function () {
-                  p(api, Array.prototype.slice.call(arguments));
+                const api: any = function (...apiArgs: any[]) {
+                  p(api, apiArgs);
                 };
                 const namespace = ar[1];
                 api.q = api.q || [];
