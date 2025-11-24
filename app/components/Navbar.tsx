@@ -20,10 +20,10 @@ export default function Navbar() {
 
       <nav className="hidden md:flex items-center gap-8">
         <a href="/#services" className="text-sm hover:text-playwright transition-colors">Services</a>
+        <a href="/pricing" className="text-sm hover:text-playwright transition-colors">Pricing</a>
+        <a href="/why-hire-us" className="text-sm hover:text-playwright transition-colors">Why Us</a>
         <a href="/blog" className="text-sm hover:text-playwright transition-colors">Blog</a>
         <a href="/case-studies" className="text-sm hover:text-playwright transition-colors">Case Studies</a>
-        <a href="/resources" className="text-sm hover:text-playwright transition-colors">Resources</a>
-        <a href="/schedule" className="text-sm hover:text-playwright transition-colors">Schedule</a>
         <a href="/#contact" className="text-sm hover:text-playwright transition-colors">Contact</a>
         <a
           href="/#audit"

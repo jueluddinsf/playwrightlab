@@ -9,10 +9,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return [
         {
-            url: 'https://playwrightlab.io',
+            url: 'https://playwrightlab.com',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 1,
+        },
+        {
+            url: 'https://playwrightlab.com/pricing',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.95,
+        },
+        {
+            url: 'https://playwrightlab.com/why-hire-us',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.9,
         },
         {
             url: 'https://playwrightlab.com/blog',

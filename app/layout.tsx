@@ -15,33 +15,48 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : 'https://playwrightlab.io'),
   title: {
-    default: "PlaywrightLab LLC | High-Velocity Automation Migrations",
-    template: "%s | PlaywrightLab LLC"
+    default: "Playwright Migration Services | Hire Expert Consultants | PlaywrightLab",
+    template: "%s | PlaywrightLab"
   },
-  description: "Expert Playwright migration services. We convert legacy Selenium/Cypress suites to reliable, high-velocity Playwright automation. Get a free audit today.",
-  keywords: ["Playwright migration", "Selenium to Playwright", "Cypress to Playwright", "Test Automation Consultancy", "Playwright Experts", "E2E Testing"],
+  description: "Hire Playwright migration experts. We migrate Selenium & Cypress to Playwright in 4-6 weeks. 70% faster tests, 80% fewer flaky tests. Free audit for qualified teams.",
+  keywords: [
+    // High-intent commercial keywords
+    "hire playwright consultant",
+    "playwright migration services",
+    "selenium to playwright migration company",
+    "playwright consulting services",
+    "test automation migration experts",
+    // Problem-focused keywords
+    "fix flaky selenium tests",
+    "speed up e2e tests",
+    "reduce test execution time",
+    // Solution keywords
+    "playwright migration agency",
+    "playwright implementation services",
+    "e2e test automation consultancy"
+  ],
   authors: [{ name: "PlaywrightLab Team" }],
   creator: "PlaywrightLab LLC",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://playwrightlab.io",
-    title: "PlaywrightLab LLC | High-Velocity Automation Migrations",
-    description: "Expert Playwright migration services. We convert legacy Selenium/Cypress suites to reliable, high-velocity Playwright automation.",
-    siteName: "PlaywrightLab LLC",
+    title: "Hire Playwright Migration Experts | 4-6 Week Migrations",
+    description: "Professional Playwright migration services. Migrate 500+ tests in 4-6 weeks. Reduce runtime by 70%, eliminate flaky tests. Free audit.",
+    siteName: "PlaywrightLab",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "PlaywrightLab LLC - Automation Experts",
+        alt: "PlaywrightLab - Professional Playwright Migration Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PlaywrightLab LLC | High-Velocity Automation Migrations",
-    description: "Expert Playwright migration services. Convert legacy suites to Playwright.",
+    title: "Hire Playwright Migration Experts | PlaywrightLab",
+    description: "Migrate Selenium/Cypress to Playwright in 4-6 weeks. 70% faster tests. Free audit for qualified teams.",
     images: ["/og-image.png"],
     creator: "@playwrightlab",
   },
