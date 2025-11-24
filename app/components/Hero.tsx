@@ -33,10 +33,9 @@ export default function Hero() {
                 >
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-playwright mb-6">
                         <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-playwright opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-playwright"></span>
                         </span>
-                        Accepting New Migration Clients
+                        NYC-Based Test Automation Specialists
                     </div>
 
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 font-display">
@@ -45,8 +44,8 @@ export default function Hero() {
                     </h1>
 
                     <p className="text-lg sm:text-xl text-zinc-400 mb-8 max-w-lg leading-relaxed">
-                        We engineer high-velocity migrations from Selenium/Cypress to <span className="text-white font-semibold">Playwright</span>.
-                        Production-grade automation infrastructure for teams that ship fast.
+                        Expert migration services from Selenium/Cypress to <span className="text-white font-semibold">Playwright</span>.
+                        We help engineering teams build reliable, maintainable test automation.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
@@ -68,11 +67,11 @@ export default function Hero() {
                     <div className="mt-12 flex items-center gap-8 text-sm text-zinc-500">
                         <div className="flex items-center gap-2">
                             <Check size={16} className="text-playwright" />
-                            <span>Zero Flakiness Guarantee</span>
+                            <span>Reduced Flakiness</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <Check size={16} className="text-playwright" />
-                            <span>Parallel Execution</span>
+                            <span>Faster Test Execution</span>
                         </div>
                     </div>
                 </motion.div>

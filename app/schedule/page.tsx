@@ -144,10 +144,10 @@ export default function SchedulePage() {
         <div className="mt-16 p-8 rounded-2xl bg-playwright/5 border border-playwright/20">
           <h3 className="text-lg font-bold mb-3">What to Expect</h3>
           <ul className="space-y-2 text-zinc-300">
-            <li>✓ Free consultation - no sales pitch</li>
-            <li>✓ Customized advice for your automation needs</li>
-            <li>✓ Clear next steps if we're a good fit</li>
-            <li>✓ Access to our migration resources</li>
+            <li>✓ Discussion of your test automation needs</li>
+            <li>✓ Technical questions and answers</li>
+            <li>✓ Overview of migration approach</li>
+            <li>✓ Next steps if there's a good fit</li>
           </ul>
         </div>
       </div>

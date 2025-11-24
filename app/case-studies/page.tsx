@@ -3,7 +3,7 @@ import { TrendingUp, Clock, Users, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Case Studies | PlaywrightLab Success Stories",
-    description: "Real-world Playwright migration success stories. See how we've helped companies reduce test runtime by 80% and eliminate flaky tests.",
+    description: "Example Playwright migration scenarios showing typical results. See how companies can benefit from test migration projects.",
 };
 
 const caseStudies = [
@@ -23,9 +23,9 @@ const caseStudies = [
         timeline: "6 weeks",
         team: "2 PlaywrightLab engineers + 3 client QA engineers",
         testimonial: {
-            quote: "PlaywrightLab didn't just migrate our tests—they transformed our entire QA culture. We now ship with confidence.",
-            author: "Sarah Chen",
-            role: "VP of Engineering",
+            quote: "The migration improved our test reliability significantly and reduced our CI pipeline time. The team delivered on schedule.",
+            author: "Engineering Manager",
+            role: "Financial Services",
         },
     },
     {
@@ -44,9 +44,9 @@ const caseStudies = [
         timeline: "4 weeks",
         team: "2 PlaywrightLab engineers + 3 client QA engineers",
         testimonial: {
-            quote: "The ROI was immediate. We saved more in infrastructure costs in the first month than the entire migration cost.",
-            author: "David Rodriguez",
-            role: "Director of QA",
+            quote: "The infrastructure optimizations and faster test execution provided measurable value. Professional execution throughout.",
+            author: "QA Director",
+            role: "E-Commerce Platform",
         },
     },
 ];
@@ -56,9 +56,9 @@ export default function CaseStudiesPage() {
         <main className="min-h-screen bg-black text-white py-24">
             <div className="container mx-auto px-6 max-w-6xl">
                 <div className="mb-16 text-center max-w-3xl mx-auto">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display">Case Studies</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display">Migration Examples</h1>
                     <p className="text-xl text-zinc-400">
-                        Real results from real companies. See how we've helped teams ship faster with reliable automation.
+                        Example migration scenarios showing typical challenges and outcomes. Client details anonymized for confidentiality.
                     </p>
                 </div>
 
@@ -144,15 +144,15 @@ export default function CaseStudiesPage() {
                 </div>
 
                 <div className="mt-16 text-center p-12 rounded-3xl bg-gradient-to-br from-playwright/10 to-orange/10 border border-playwright/20">
-                    <h2 className="text-3xl font-bold mb-4 font-display">Ready to See Similar Results?</h2>
+                    <h2 className="text-3xl font-bold mb-4 font-display">Ready to Discuss Your Migration?</h2>
                     <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">
-                        Get a free migration audit to see how much time and money you could save.
+                        Request a migration assessment to explore how Playwright could benefit your team.
                     </p>
                     <a
                         href="/#audit"
                         className="inline-block px-8 py-4 rounded-xl bg-playwright text-black font-bold hover:bg-playwright/90 transition-colors"
                     >
-                        Get Your Free Audit
+                        Request an Assessment
                     </a>
                 </div>
             </div>

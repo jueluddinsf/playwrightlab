@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Pricing | Playwright Migration Services",
-    description: "Transparent pricing for Playwright migration services. Packages starting at $15k for small teams. Custom quotes for enterprise. NYC-based consultancy.",
+    description: "Playwright migration service packages starting at $15k for small teams. Custom quotes for enterprise projects. NYC-based consultancy.",
 };
 
 const pricingTiers = [
@@ -22,7 +22,7 @@ const pricingTiers = [
             "Knowledge transfer session",
             "Basic documentation",
         ],
-        ideal: "Startups, small product teams",
+        ideal: "Small teams, focused test suites",
         cta: "Get Started",
         popular: false,
     },
@@ -43,7 +43,7 @@ const pricingTiers = [
             "Comprehensive documentation",
             "Flaky test remediation",
         ],
-        ideal: "Growing companies, Series A-B startups",
+        ideal: "Medium-sized teams, established products",
         cta: "Most Popular",
         popular: true,
     },
@@ -85,13 +85,13 @@ export default function PricingPage() {
                 {/* Header */}
                 <div className="text-center mb-16 max-w-3xl mx-auto">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display">
-                        Transparent Pricing
+                        Service Pricing
                     </h1>
                     <p className="text-xl text-zinc-400 mb-4">
-                        Fixed-price packages for predictable budgets. Custom quotes for complex migrations.
+                        Structured packages based on project scope. Custom quotes available for complex migrations.
                     </p>
                     <p className="text-sm text-zinc-500">
-                        🗽 NYC-based team • All prices in USD • No hidden fees
+                        NYC-based team • All prices in USD • No hidden fees
                     </p>
                 </div>
 
@@ -99,15 +99,15 @@ export default function PricingPage() {
                 <div className="flex flex-wrap justify-center gap-8 mb-16 text-sm text-zinc-400">
                     <div className="flex items-center gap-2">
                         <Shield className="text-playwright" size={20} />
-                        <span>Money-back guarantee</span>
+                        <span>Clear deliverables</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <Clock className="text-playwright" size={20} />
-                        <span>On-time delivery</span>
+                        <span>Timeline transparency</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <Zap className="text-playwright" size={20} />
-                        <span>Fast turnaround</span>
+                        <span>Efficient process</span>
                     </div>
                 </div>
 
@@ -220,13 +220,13 @@ export default function PricingPage() {
                         <details className="p-6 rounded-xl bg-zinc-900/40 border border-white/10">
                             <summary className="font-bold cursor-pointer">What if my project is larger than 800 tests?</summary>
                             <p className="mt-4 text-sm text-zinc-300">
-                                We'll provide a custom quote based on your exact requirements. Typical pricing is $40-60 per test for large suites.
+                                We'll provide a custom quote based on your specific requirements, test complexity, and timeline needs.
                             </p>
                         </details>
                         <details className="p-6 rounded-xl bg-zinc-900/40 border border-white/10">
-                            <summary className="font-bold cursor-pointer">Is there a money-back guarantee?</summary>
+                            <summary className="font-bold cursor-pointer">What if I'm not satisfied with the work?</summary>
                             <p className="mt-4 text-sm text-zinc-300">
-                                Yes. If you're not satisfied after the first week, we'll refund 100% of your payment, no questions asked.
+                                We use milestone-based delivery with regular check-ins to ensure the project meets your expectations throughout the engagement.
                             </p>
                         </details>
                     </div>
@@ -236,7 +236,7 @@ export default function PricingPage() {
                 <div className="text-center p-12 rounded-3xl bg-gradient-to-br from-playwright/10 to-orange/10 border border-playwright/20">
                     <h2 className="text-3xl font-bold mb-4 font-display">Ready to Get Started?</h2>
                     <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">
-                        Get a free migration audit and custom quote. We'll analyze your test suite and provide a detailed proposal within 48 hours.
+                        Request a migration audit and custom quote. We'll review your test suite and provide a detailed proposal.
                     </p>
                     <Link
                         href="/#audit"

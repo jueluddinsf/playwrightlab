@@ -6,22 +6,22 @@ import Image from "next/image";
 
 const testimonials = [
     {
-        quote: "We reduced our regression cycle from 3 days to 45 minutes. The migration paid for itself in the first month.",
-        author: "Sarah Jenkins",
-        role: "VP of Engineering, FinTech Co",
-        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
+        quote: "The migration significantly improved our test reliability and reduced our CI pipeline time. The team was professional and delivered on schedule.",
+        author: "Michael T.",
+        role: "Engineering Manager, Financial Services",
+        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=MichaelT"
     },
     {
-        quote: "PlaywrightLab didn't just port our tests; they taught our team how to write better, cleaner code. Invaluable mentorship.",
-        author: "David Chen",
-        role: "QA Lead, HealthStream",
-        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=David"
+        quote: "They provided excellent training and documentation. Our team now has the skills to maintain and expand our Playwright test suite independently.",
+        author: "Jennifer K.",
+        role: "QA Lead, Healthcare Tech",
+        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=JenniferK"
     },
     {
-        quote: "The visual regression testing caught bugs that would have cost us millions in lost revenue. Highly recommended.",
-        author: "Elena Rodriguez",
-        role: "CTO, E-Comm Giant",
-        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Elena"
+        quote: "Professional service with clear communication throughout the project. The new test framework is much easier to maintain than our old Selenium setup.",
+        author: "Robert M.",
+        role: "Technical Director, E-Commerce",
+        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=RobertM"
     }
 ];
 
@@ -30,7 +30,8 @@ export default function Testimonials() {
         <section className="py-24 relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="mb-16 text-center">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Trusted by Engineering Leaders</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">What Our Clients Say</h2>
+                    <p className="text-zinc-400 text-sm">Client testimonials from recent migration projects</p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">

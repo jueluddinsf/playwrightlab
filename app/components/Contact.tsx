@@ -14,9 +14,9 @@ export default function Contact() {
                     transition={{ duration: 0.6 }}
                     className="max-w-3xl mx-auto"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Ready to Ship Faster?</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Let's Talk About Your Migration</h2>
                     <p className="text-zinc-400 text-lg mb-10">
-                        Join the engineering teams at Fortune 500 companies who trust PlaywrightLab for their critical automation infrastructure.
+                        Get in touch to discuss your Playwright migration. We'll help you assess your needs and create a plan.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

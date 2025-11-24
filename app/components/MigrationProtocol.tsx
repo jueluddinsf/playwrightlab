@@ -26,9 +26,9 @@ export default function MigrationProtocol() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">The Migration Protocol</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Why Playwright?</h2>
                     <p className="text-zinc-400 max-w-2xl mx-auto">
-                        We don't just port code. We re-engineer your entire quality assurance infrastructure for speed and reliability.
+                        Modern test automation requires modern tools. Here's what you gain with a migration to Playwright.
                     </p>
                 </motion.div>
 
@@ -49,20 +49,20 @@ export default function MigrationProtocol() {
                         <div className="space-y-8">
                             <FeatureItem
                                 icon={Clock}
-                                title="Slow Execution"
-                                description="Sequential execution and heavy overheads make feedback loops painfully slow."
+                                title="Slower Execution"
+                                description="Sequential execution and framework overheads can result in longer feedback cycles."
                                 isNegative={true}
                             />
                             <FeatureItem
                                 icon={XCircle}
-                                title="Maintenance Hell"
-                                description="Brittle selectors and manual waits (Thread.sleep) cause constant test failures."
+                                title="Higher Maintenance"
+                                description="Manual waits and brittle selectors can lead to frequent test failures and debugging."
                                 isNegative={true}
                             />
                             <FeatureItem
                                 icon={AlertTriangle}
-                                title="Flaky Results"
-                                description="False positives erode trust in automation, leading to manual regression testing."
+                                title="Test Flakiness"
+                                description="Intermittent failures reduce confidence in test results and require manual verification."
                                 isNegative={true}
                             />
                         </div>
@@ -97,7 +97,7 @@ export default function MigrationProtocol() {
                             <FeatureItem
                                 icon={CheckCircle2}
                                 title="Parallel Execution"
-                                description="Run tests across multiple workers and browsers simultaneously for 10x speed."
+                                description="Run tests across multiple workers and browsers simultaneously for significantly faster results."
                             />
                         </div>
                     </motion.div>

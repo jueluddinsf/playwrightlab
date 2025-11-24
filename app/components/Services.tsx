@@ -36,8 +36,8 @@ const ServiceCard = ({ title, description, icon: Icon, delay = 0 }: any) => (
 
 const services = [
     {
-        title: "Enterprise Migration",
-        description: "Systematic porting of legacy Selenium/Cypress suites to TypeScript Playwright. We handle the heavy lifting of converting Page Object Models.",
+        title: "Test Suite Migration",
+        description: "Systematic conversion of Selenium/Cypress tests to TypeScript Playwright. We handle Page Object Model refactoring and test architecture updates.",
         icon: Code2,
     },
     {
@@ -51,8 +51,8 @@ const services = [
         icon: Eye,
     },
     {
-        title: "Infrastructure Engineering",
-        description: "Dockerized execution environments and custom reporting (Allure/Monocart) for reliable, reproducible test runs.",
+        title: "Test Infrastructure Setup",
+        description: "Configure Dockerized test environments and reporting tools (Allure/Monocart) for reliable, reproducible test execution.",
         icon: Container,
     },
     {
@@ -76,8 +76,8 @@ const services = [
         icon: Smartphone,
     },
     {
-        title: "Talent & Training",
-        description: "We sit on your hiring panels to vet engineers and provide pair-programming mentorship to upskill your team.",
+        title: "Team Training & Support",
+        description: "Hands-on training sessions and pair-programming to help your team master Playwright best practices and patterns.",
         icon: Users,
     },
 ];
@@ -87,9 +87,9 @@ export default function Services() {
         <section id="services" className="py-24 relative bg-black/50">
             <div className="container mx-auto px-6">
                 <div className="mb-16 text-center max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Full-Stack Automation Expertise</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Complete Test Automation Services</h2>
                     <p className="text-zinc-400 text-lg">
-                        We don't just write scripts. We build production-grade quality platforms tailored to your tech stack.
+                        From migration strategy to implementation, we help you build robust test automation tailored to your needs.
                     </p>
                 </div>
 

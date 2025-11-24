@@ -18,19 +18,19 @@ export default function Audit() {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">
-                        Get Your 50-Point <br />
-                        <span className="text-orange">Migration Roadmap</span>
+                        Get a <br />
+                        <span className="text-orange">Migration Assessment</span>
                     </h2>
                     <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
-                        Stop guessing. Our senior engineers will analyze your existing Selenium/Cypress suite and provide a detailed blueprint for your Playwright migration.
+                        We'll analyze your existing Selenium/Cypress test suite and provide a detailed assessment with recommendations for your Playwright migration.
                     </p>
 
                     <ul className="space-y-4 mb-10">
                         {[
-                            "Flakiness Root Cause Analysis",
-                            "Page Object Model Refactoring Strategy",
-                            "CI/CD Pipeline Optimization Plan",
-                            "ROI & Timeline Estimation"
+                            "Test Suite Health Assessment",
+                            "Architecture Review & Recommendations",
+                            "CI/CD Integration Strategy",
+                            "Timeline & Cost Estimation"
                         ].map((item, index) => (
                             <li key={index} className="flex items-center gap-3 text-zinc-300">
                                 <CheckCircle2 className="text-orange flex-shrink-0" size={20} />
@@ -43,7 +43,7 @@ export default function Audit() {
                         href="/schedule"
                         className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-orange rounded-full hover:bg-orange/90 transition-all hover:scale-105 shadow-[0_0_30px_-10px_rgba(255,87,34,0.6)]"
                     >
-                        Schedule Your Audit
+                        Request an Assessment
                         <ArrowRight size={18} />
                     </a>
                 </motion.div>
@@ -81,7 +81,7 @@ export default function Audit() {
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-bold text-white mb-1">Migration Readiness</h3>
-                                    <p className="text-sm text-zinc-400">Your suite is ready for porting, but critical flakiness risks detected in 3 modules.</p>
+                                    <p className="text-sm text-zinc-400">Example assessment showing test health metrics and improvement opportunities.</p>
                                 </div>
                             </div>
 

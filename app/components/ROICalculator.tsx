@@ -39,9 +39,9 @@ export default function ROICalculator() {
         <section className="py-24 relative bg-zinc-900/30 border-y border-white/5">
             <div className="container mx-auto px-6">
                 <div className="mb-16 text-center max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Calculate Your Savings</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Estimate Your Potential Savings</h2>
                     <p className="text-zinc-400 text-lg">
-                        See how much time and money you're losing to slow, flaky tests.
+                        Calculate the potential time and cost savings from migrating to Playwright.
                     </p>
                 </div>
 

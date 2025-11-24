@@ -8,7 +8,7 @@ excerpt: "A comprehensive, step-by-step guide to migrating your Selenium test su
 
 # Selenium to Playwright: Complete Migration Guide
 
-If you're reading this, you're probably frustrated with slow, flaky Selenium tests that block deployments and drain engineering time. You're not alone. We've helped dozens of companies migrate from Selenium to Playwright, and the results are consistently transformative: **2-4x faster execution**, **70-90% reduction in flaky tests**, and **happier engineers**.
+If you're reading this, you're probably frustrated with slow, flaky Selenium tests that block deployments and drain engineering time. You're not alone. We've helped companies migrate from Selenium to Playwright, and teams typically see faster execution times, fewer flaky tests, and improved developer experience.
 
 This guide will walk you through the entire migration process, from initial audit to production deployment.
 
@@ -16,8 +16,8 @@ This guide will walk you through the entire migration process, from initial audi
 
 Before we dive into the "how," let's establish the "why." Playwright offers several game-changing advantages over Selenium:
 
-### 1. **2-4x Faster Execution (On Average)**
-Playwright's architecture allows for true parallelization and faster browser communication. Where Selenium might take 2 hours to run 500 tests, Playwright can do it in 30-40 minutes.
+### 1. **Faster Execution**
+Playwright's architecture allows for true parallelization and efficient browser communication. Typical migrations see significantly reduced test execution times.
 
 ### 2. **Built-in Auto-Waiting**
 No more `Thread.sleep()` or custom wait logic. Playwright automatically waits for elements to be actionable before interacting with them.
@@ -333,16 +333,16 @@ jobs:
           path: playwright-report/
 ```
 
-## Results You Can Expect
+## Typical Benefits
 
-Based on our client migrations:
+Based on migration projects, teams commonly experience:
 
-| Metric | Before (Selenium) | After (Playwright) | Improvement |
-|--------|-------------------|-------------------|-------------|
-| Test Runtime (500 tests) | 2 hours | 30-40 minutes | **70-75% faster** |
-| Flaky Tests | 15% | 3-5% | **70-80% reduction** |
-| Maintenance Hours/Month | 40 hours | 12-15 hours | **60-70% less** |
-| Developer Satisfaction | 3/10 | 8-9/10 | **150-200% increase** |
+| Area | Improvement |
+|------|------------|
+| Test Runtime | Significantly reduced through parallelization |
+| Test Reliability | Fewer flaky tests due to auto-waiting |
+| Maintenance | Cleaner API and better error messages |
+| Developer Experience | Modern tooling and TypeScript support |
 
 ## Common Pitfalls to Avoid
 
@@ -353,14 +353,14 @@ Based on our client migrations:
 
 ## Need Help?
 
-Migration can be daunting, especially for large suites. We've completed dozens of migrations totaling over 10,000 tests and can help you avoid common mistakes.
+Migration can be complex, especially for large test suites. We can help you plan and execute your migration efficiently.
 
-**[Get a free migration audit](/audit)** to see:
-- Estimated timeline
-- Cost savings projection
-- Risk assessment
-- Custom migration roadmap
+**[Request a migration assessment](/audit)** to discuss:
+- Project scope and timeline
+- Migration approach
+- Risk mitigation
+- Team training needs
 
 ---
 
-**About the Author**: This guide is based on real-world migrations we've completed for FinTech, E-Commerce, and SaaS companies. We've seen it all—from 100-test suites to 10,000+ test behemoths.
+**About the Author**: This guide is based on experience with Playwright migrations across FinTech, E-Commerce, and SaaS companies.

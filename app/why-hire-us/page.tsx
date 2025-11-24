@@ -15,18 +15,18 @@ const differentiators = [
     },
     {
         icon: Award,
-        title: "Proven Track Record",
-        description: "50+ successful migrations across FinTech, E-Commerce, and SaaS. Average 73% reduction in test runtime.",
+        title: "Proven Experience",
+        description: "Successfully completed migrations across FinTech, E-Commerce, and SaaS companies with measurable improvements in test reliability.",
     },
     {
         icon: Zap,
-        title: "Fast Turnaround",
-        description: "Most migrations completed in 4-6 weeks. We work in parallel with your team to minimize disruption.",
+        title: "Efficient Process",
+        description: "Typical migrations completed in 4-8 weeks depending on scope. We work alongside your team to minimize disruption.",
     },
     {
         icon: Shield,
-        title: "Risk-Free Guarantee",
-        description: "100% money-back guarantee if you're not satisfied after the first week. We're that confident in our work.",
+        title: "Satisfaction Focus",
+        description: "Clear milestones and regular check-ins ensure the project stays on track and meets your expectations.",
     },
     {
         icon: Users,
@@ -42,19 +42,19 @@ const differentiators = [
 
 const teamMembers = [
     {
-        name: "Senior Engineers",
-        experience: "10+ years in test automation",
-        expertise: "Playwright, Selenium, Cypress, TestCafe",
+        name: "Test Automation Engineers",
+        experience: "Deep experience in test automation frameworks",
+        expertise: "Playwright, Selenium, Cypress, TypeScript",
     },
     {
-        name: "DevOps Specialists",
-        experience: "CI/CD pipeline optimization",
+        name: "DevOps Integration",
+        experience: "CI/CD pipeline configuration and optimization",
         expertise: "GitHub Actions, Jenkins, CircleCI, GitLab",
     },
     {
-        name: "QA Architects",
-        experience: "Framework design & best practices",
-        expertise: "Page Object Model, Test Data Management",
+        name: "Framework Architecture",
+        experience: "Test framework design and best practices",
+        expertise: "Page Object Model, Test Data Management, Reporting",
     },
 ];
 
@@ -74,11 +74,11 @@ const comparisonPoints = [
         support: "Email only",
     },
     {
-        category: "PlaywrightLab (Us)",
-        time: "4-6 weeks",
-        risk: "Low (proven process)",
-        cost: "$15-35k",
-        support: "Dedicated Slack + training",
+        category: "PlaywrightLab",
+        time: "4-8 weeks",
+        risk: "Lower (structured approach)",
+        cost: "$15-35k+",
+        support: "Dedicated support + training",
         highlight: true,
     },
 ];
@@ -94,10 +94,10 @@ export default function WhyHireUsPage() {
                         <span>Based in New York City</span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display">
-                        Why Hire PlaywrightLab?
+                        Why Choose PlaywrightLab?
                     </h1>
                     <p className="text-xl text-zinc-400">
-                        We're not just consultants—we're your migration partners. Here's why teams choose us.
+                        Expert Playwright migration services with hands-on training and comprehensive support.
                     </p>
                 </div>
 
@@ -176,7 +176,7 @@ export default function WhyHireUsPage() {
                         <div>
                             <h2 className="text-2xl font-bold mb-2 font-display">The NYC Advantage</h2>
                             <p className="text-zinc-300 mb-4">
-                                Being based in New York City means we understand the fast-paced, high-stakes environment of tech companies. We've worked with FinTech firms in FiDi, E-Commerce companies in SoHo, and startups in Brooklyn.
+                                Based in New York City, we work with companies across financial services, e-commerce, and technology sectors both locally and nationwide.
                             </p>
                             <ul className="space-y-2 text-sm text-zinc-300">
                                 <li className="flex items-start gap-2">
@@ -200,34 +200,34 @@ export default function WhyHireUsPage() {
                     </div>
                 </div>
 
-                {/* Social Proof */}
+                {/* What We Deliver */}
                 <div className="mb-16">
-                    <h2 className="text-3xl font-bold mb-8 font-display text-center">By the Numbers</h2>
+                    <h2 className="text-3xl font-bold mb-8 font-display text-center">What You Can Expect</h2>
                     <div className="grid md:grid-cols-4 gap-6">
                         <div className="text-center p-6 rounded-2xl bg-zinc-900/40 border border-white/10">
-                            <div className="text-4xl font-bold text-playwright mb-2">50+</div>
-                            <div className="text-sm text-zinc-400">Successful Migrations</div>
+                            <div className="text-4xl font-bold text-playwright mb-2">Faster</div>
+                            <div className="text-sm text-zinc-400">Test Execution Times</div>
                         </div>
                         <div className="text-center p-6 rounded-2xl bg-zinc-900/40 border border-white/10">
-                            <div className="text-4xl font-bold text-playwright mb-2">73%</div>
-                            <div className="text-sm text-zinc-400">Avg. Runtime Reduction</div>
+                            <div className="text-4xl font-bold text-playwright mb-2">Fewer</div>
+                            <div className="text-sm text-zinc-400">Flaky Tests</div>
                         </div>
                         <div className="text-center p-6 rounded-2xl bg-zinc-900/40 border border-white/10">
-                            <div className="text-4xl font-bold text-playwright mb-2">4-6</div>
-                            <div className="text-sm text-zinc-400">Weeks Avg. Timeline</div>
+                            <div className="text-4xl font-bold text-playwright mb-2">Better</div>
+                            <div className="text-sm text-zinc-400">Maintainability</div>
                         </div>
                         <div className="text-center p-6 rounded-2xl bg-zinc-900/40 border border-white/10">
-                            <div className="text-4xl font-bold text-playwright mb-2">100%</div>
-                            <div className="text-sm text-zinc-400">Client Satisfaction</div>
+                            <div className="text-4xl font-bold text-playwright mb-2">Training</div>
+                            <div className="text-sm text-zinc-400">For Your Team</div>
                         </div>
                     </div>
                 </div>
 
                 {/* CTA */}
                 <div className="text-center p-12 rounded-3xl bg-zinc-900/40 border border-white/10">
-                    <h2 className="text-3xl font-bold mb-4 font-display">Ready to Work Together?</h2>
+                    <h2 className="text-3xl font-bold mb-4 font-display">Ready to Get Started?</h2>
                     <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">
-                        Get a free migration audit. We'll analyze your test suite and provide a custom proposal within 48 hours.
+                        Request a migration audit. We'll review your test suite and provide a detailed assessment and proposal.
                     </p>
                     <Link
                         href="/#audit"

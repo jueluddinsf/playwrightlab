@@ -6,20 +6,20 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
     {
-        question: "Is rewriting my entire suite worth it?",
-        answer: "Absolutely. Maintaining a flaky Selenium suite costs exponentially more in engineering time than a one-time migration. Most clients see a 500-1000% ROI within the first year."
+        question: "Is migrating to Playwright worth the investment?",
+        answer: "For most teams, yes. Playwright offers better reliability, faster execution, and modern features that reduce maintenance burden. The time saved on debugging flaky tests and faster CI runs typically provides positive ROI within 6-12 months."
     },
     {
-        question: "Do you support Java or Python bindings?",
-        answer: "We specialize in migrating teams to the TypeScript/JavaScript ecosystem because it offers the best developer experience and tightest integration with modern web apps. However, we can support Python for data-heavy applications."
+        question: "Which programming languages do you support?",
+        answer: "We primarily work with TypeScript/JavaScript as it provides excellent tooling and integrates well with modern web applications. We can also support Python-based Playwright migrations depending on your team's needs."
     },
     {
         question: "How long does a typical migration take?",
-        answer: "It depends on the suite size. A typical 500-test suite takes about 4-6 weeks to fully migrate, verify, and integrate into your CI/CD pipeline."
+        answer: "Timeline varies based on test suite size and complexity. A medium-sized suite (300-500 tests) typically takes 4-6 weeks including migration, verification, and CI/CD integration. We provide detailed timeline estimates after the initial audit."
     },
     {
         question: "Do you offer post-migration support?",
-        answer: "Yes! We offer retainer packages for ongoing maintenance, flaky test debugging, and team training to ensure your automation stays healthy."
+        answer: "Yes. All packages include post-launch support periods, and we offer extended support packages for ongoing maintenance, troubleshooting, and additional training as needed."
     }
 ];
 
