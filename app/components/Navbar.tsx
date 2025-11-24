@@ -23,6 +23,7 @@ export default function Navbar() {
         <a href="/blog" className="text-sm hover:text-playwright transition-colors">Blog</a>
         <a href="/case-studies" className="text-sm hover:text-playwright transition-colors">Case Studies</a>
         <a href="/resources" className="text-sm hover:text-playwright transition-colors">Resources</a>
+        <a href="/schedule" className="text-sm hover:text-playwright transition-colors">Schedule</a>
         <a href="/#contact" className="text-sm hover:text-playwright transition-colors">Contact</a>
         <a
           href="/#audit"
