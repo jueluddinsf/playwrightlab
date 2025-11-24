@@ -9,6 +9,7 @@ import FAQ from "./components/FAQ";
 import Audit from "./components/Audit";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import BugSquasher from "./components/BugSquasher";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Audit />
       <Contact />
       <Footer />
+      <BugSquasher />
     </main>
   );
 }
