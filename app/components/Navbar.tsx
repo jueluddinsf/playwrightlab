@@ -18,18 +18,19 @@ export default function Navbar() {
         </span>
       </div>
 
-      <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
-        <Link href="#services" className="hover:text-white transition-colors">
-          Services
-        </Link>
-        <Link href="#migration" className="hover:text-white transition-colors">
-          Migration Protocol
-        </Link>
-        <Link href="#training" className="hover:text-white transition-colors">
-          Training
-        </Link>
-      </div>
-
+      <nav className="hidden md:flex items-center gap-8">
+        <a href="/#services" className="text-sm hover:text-playwright transition-colors">Services</a>
+        <a href="/blog" className="text-sm hover:text-playwright transition-colors">Blog</a>
+        <a href="/case-studies" className="text-sm hover:text-playwright transition-colors">Case Studies</a>
+        <a href="/resources" className="text-sm hover:text-playwright transition-colors">Resources</a>
+        <a href="/#contact" className="text-sm hover:text-playwright transition-colors">Contact</a>
+        <a
+          href="/#audit"
+          className="px-6 py-2 rounded-lg bg-playwright text-black font-bold hover:bg-playwright/90 transition-colors"
+        >
+          Get Audit
+        </a>
+      </nav>
       <div className="flex items-center gap-4">
         <Link
           href="#contact"

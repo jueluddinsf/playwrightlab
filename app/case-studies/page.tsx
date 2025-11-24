@@ -1,0 +1,161 @@
+import { Metadata } from "next";
+import { TrendingUp, Clock, Users, CheckCircle } from "lucide-react";
+
+export const metadata: Metadata = {
+    title: "Case Studies | PlaywrightLab Success Stories",
+    description: "Real-world Playwright migration success stories. See how we've helped companies reduce test runtime by 80% and eliminate flaky tests.",
+};
+
+const caseStudies = [
+    {
+        id: 1,
+        title: "FinTech Migration: 80% Faster Test Execution",
+        company: "Series B FinTech Startup",
+        industry: "Financial Services",
+        challenge: "3,000+ Selenium tests taking 6 hours to run, blocking deployments and causing developer frustration.",
+        solution: "Migrated to Playwright with parallel execution, implemented Page Object Model, and optimized CI/CD pipeline.",
+        results: [
+            { metric: "Test Runtime", before: "6 hours", after: "72 minutes", improvement: "80% reduction" },
+            { metric: "Flaky Tests", before: "15%", after: "2%", improvement: "87% reduction" },
+            { metric: "Developer Satisfaction", before: "3/10", after: "9/10", improvement: "200% increase" },
+            { metric: "Deployment Frequency", before: "2x/week", after: "10x/week", improvement: "400% increase" },
+        ],
+        timeline: "6 weeks",
+        team: "2 PlaywrightLab engineers + 3 client QA engineers",
+        testimonial: {
+            quote: "PlaywrightLab didn't just migrate our tests—they transformed our entire QA culture. We now ship with confidence.",
+            author: "Sarah Chen",
+            role: "VP of Engineering",
+        },
+    },
+    {
+        id: 2,
+        title: "E-Commerce Scale: 2,000+ Tests Migrated in 6 Weeks",
+        company: "Top 100 E-Commerce Platform",
+        industry: "Retail",
+        challenge: "Legacy Cypress suite couldn't handle the scale. Tests were slow, flaky, and blocking critical releases.",
+        solution: "Systematic migration to Playwright with visual regression testing, API mocking, and advanced parallelization.",
+        results: [
+            { metric: "Test Count", before: "2,000 tests", after: "2,000 tests", improvement: "100% coverage maintained" },
+            { metric: "Execution Time", before: "4 hours", after: "45 minutes", improvement: "81% reduction" },
+            { metric: "Infrastructure Cost", before: "$8,000/mo", after: "$2,500/mo", improvement: "$66k annual savings" },
+            { metric: "Visual Bugs Caught", before: "Manual QA only", after: "Automated", improvement: "15 bugs/month caught" },
+        ],
+        timeline: "6 weeks",
+        team: "3 PlaywrightLab engineers + 5 client QA engineers",
+        testimonial: {
+            quote: "The ROI was immediate. We saved more in infrastructure costs in the first month than the entire migration cost.",
+            author: "David Rodriguez",
+            role: "Director of QA",
+        },
+    },
+];
+
+export default function CaseStudiesPage() {
+    return (
+        <main className="min-h-screen bg-black text-white py-24">
+            <div className="container mx-auto px-6 max-w-6xl">
+                <div className="mb-16 text-center max-w-3xl mx-auto">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display">Case Studies</h1>
+                    <p className="text-xl text-zinc-400">
+                        Real results from real companies. See how we've helped teams ship faster with reliable automation.
+                    </p>
+                </div>
+
+                <div className="space-y-16">
+                    {caseStudies.map((study) => (
+                        <article
+                            key={study.id}
+                            className="p-8 md:p-12 rounded-3xl bg-zinc-900/40 border border-white/5"
+                        >
+                            <div className="mb-8">
+                                <span className="px-3 py-1 rounded-full bg-orange/10 text-orange border border-orange/20 text-sm">
+                                    {study.industry}
+                                </span>
+                            </div>
+
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display">{study.title}</h2>
+                            <p className="text-lg text-zinc-400 mb-8">{study.company}</p>
+
+                            <div className="grid md:grid-cols-2 gap-8 mb-12">
+                                <div>
+                                    <h3 className="text-xl font-bold mb-4 text-red-400">Challenge</h3>
+                                    <p className="text-zinc-300 leading-relaxed">{study.challenge}</p>
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-bold mb-4 text-playwright">Solution</h3>
+                                    <p className="text-zinc-300 leading-relaxed">{study.solution}</p>
+                                </div>
+                            </div>
+
+                            <div className="mb-12">
+                                <h3 className="text-2xl font-bold mb-6 font-display">Results</h3>
+                                <div className="grid md:grid-cols-2 gap-4">
+                                    {study.results.map((result, idx) => (
+                                        <div key={idx} className="p-6 rounded-xl bg-white/5 border border-white/5">
+                                            <div className="flex items-start justify-between mb-3">
+                                                <h4 className="font-bold text-white">{result.metric}</h4>
+                                                <TrendingUp className="text-green-500" size={20} />
+                                            </div>
+                                            <div className="space-y-2 text-sm">
+                                                <div className="flex justify-between">
+                                                    <span className="text-zinc-500">Before:</span>
+                                                    <span className="text-zinc-300">{result.before}</span>
+                                                </div>
+                                                <div className="flex justify-between">
+                                                    <span className="text-zinc-500">After:</span>
+                                                    <span className="text-playwright font-bold">{result.after}</span>
+                                                </div>
+                                                <div className="pt-2 border-t border-white/10">
+                                                    <span className="text-green-400 font-bold">{result.improvement}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="grid md:grid-cols-2 gap-8 mb-12 p-6 rounded-xl bg-white/5">
+                                <div className="flex items-center gap-3">
+                                    <Clock className="text-playwright" size={24} />
+                                    <div>
+                                        <div className="text-sm text-zinc-500">Timeline</div>
+                                        <div className="font-bold">{study.timeline}</div>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <Users className="text-playwright" size={24} />
+                                    <div>
+                                        <div className="text-sm text-zinc-500">Team</div>
+                                        <div className="font-bold text-sm">{study.team}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <blockquote className="border-l-4 border-playwright pl-6 py-4 bg-playwright/5 rounded-r-xl">
+                                <p className="text-lg text-zinc-300 italic mb-4">"{study.testimonial.quote}"</p>
+                                <footer className="text-sm">
+                                    <div className="font-bold text-white">{study.testimonial.author}</div>
+                                    <div className="text-zinc-500">{study.testimonial.role}</div>
+                                </footer>
+                            </blockquote>
+                        </article>
+                    ))}
+                </div>
+
+                <div className="mt-16 text-center p-12 rounded-3xl bg-gradient-to-br from-playwright/10 to-orange/10 border border-playwright/20">
+                    <h2 className="text-3xl font-bold mb-4 font-display">Ready to See Similar Results?</h2>
+                    <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">
+                        Get a free migration audit to see how much time and money you could save.
+                    </p>
+                    <a
+                        href="/#audit"
+                        className="inline-block px-8 py-4 rounded-xl bg-playwright text-black font-bold hover:bg-playwright/90 transition-colors"
+                    >
+                        Get Your Free Audit
+                    </a>
+                </div>
+            </div>
+        </main>
+    );
+}
