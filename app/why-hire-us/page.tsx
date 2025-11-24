@@ -3,8 +3,23 @@ import { MapPin, Award, Users, Zap, Shield, TrendingUp } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Why Hire Us | NYC Playwright Migration Experts",
-    description: "NYC-based Playwright migration consultancy. 10+ years combined experience, 50+ successful migrations. On-site training available for NYC teams.",
+    title: "Why Choose PlaywrightLab | NYC Test Automation Experts",
+    description: "Expert Playwright migration consultants based in New York City. Specializing in Selenium/Cypress migrations, CI/CD integration, and developer training. On-site sessions available for NYC teams, remote services nationwide.",
+    keywords: [
+        "playwright consultant nyc",
+        "test automation expert new york",
+        "playwright migration consultancy",
+        "why hire playwright consultant",
+        "test automation services nyc"
+    ],
+    openGraph: {
+        title: "Why Choose PlaywrightLab - NYC Test Automation Experts",
+        description: "NYC-based Playwright consultants with expertise in test migration, framework architecture, and team training.",
+        url: "https://playwrightlab.io/why-hire-us",
+    },
+    alternates: {
+        canonical: "https://playwrightlab.io/why-hire-us",
+    },
 };
 
 const differentiators = [

@@ -1,10 +1,27 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Calendar, Clock } from "lucide-react";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export const metadata: Metadata = {
-    title: "Blog | Playwright Migration Guides",
-    description: "Expert guides on migrating from Selenium and Cypress to Playwright. Learn best practices, performance optimization, and automation strategies.",
+    title: "Playwright Blog - Migration Guides, Tutorials & Best Practices",
+    description: "Expert guides on Playwright test automation, Selenium/Cypress migration strategies, CI/CD integration, and performance optimization. Free tutorials from experienced automation engineers.",
+    keywords: [
+        "playwright blog",
+        "playwright tutorial",
+        "selenium to playwright guide",
+        "test automation blog",
+        "playwright best practices",
+        "e2e testing tips"
+    ],
+    openGraph: {
+        title: "Playwright Blog - Migration Guides & Tutorials",
+        description: "Expert guides on Playwright migration, automation best practices, and performance optimization.",
+        url: "https://playwrightlab.io/blog",
+    },
+    alternates: {
+        canonical: "https://playwrightlab.io/blog",
+    },
 };
 
 const blogPosts = [
@@ -38,6 +55,8 @@ export default function BlogPage() {
     return (
         <main className="min-h-screen bg-black text-white py-24">
             <div className="container mx-auto px-6 max-w-4xl">
+                <Breadcrumbs items={[{ label: "Blog" }]} />
+                
                 <div className="mb-16">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display">Blog</h1>
                     <p className="text-xl text-zinc-400">

@@ -4,6 +4,9 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
+// Note: Metadata export not supported in 'use client' components
+// SEO handled by parent layout
+
 declare global {
   interface Window {
     Cal: any;

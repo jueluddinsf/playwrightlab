@@ -2,8 +2,24 @@ import { Metadata } from "next";
 import { ExternalLink, Youtube, FileText, Linkedin, Twitter } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Resources | Playwright Learning Hub",
-    description: "Curated Playwright resources, tutorials, and external content. Learn from industry experts and stay updated on automation best practices.",
+    title: "Playwright Resources & Learning Hub | Tutorials & Guides",
+    description: "Free Playwright resources, tutorials, migration guides, and best practices. Learn test automation from industry experts. Articles, videos, and community content for Playwright developers.",
+    keywords: [
+        "playwright tutorial",
+        "playwright resources",
+        "playwright migration guide",
+        "learn playwright",
+        "playwright best practices",
+        "test automation resources"
+    ],
+    openGraph: {
+        title: "Playwright Resources & Learning Hub",
+        description: "Curated Playwright resources, tutorials, and guides for test automation engineers.",
+        url: "https://playwrightlab.io/resources",
+    },
+    alternates: {
+        canonical: "https://playwrightlab.io/resources",
+    },
 };
 
 const externalArticles = [

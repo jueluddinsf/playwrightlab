@@ -1,10 +1,26 @@
 import { Metadata } from "next";
 import { Check, ArrowRight, Zap, Shield, Clock } from "lucide-react";
 import Link from "next/link";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export const metadata: Metadata = {
-    title: "Pricing | Playwright Migration Services",
-    description: "Playwright migration service packages starting at $15k for small teams. Custom quotes for enterprise projects. NYC-based consultancy.",
+    title: "Pricing & Packages - Playwright Migration Services | PlaywrightLab",
+    description: "Transparent pricing for professional Playwright migration services. Packages from $15k for small teams to custom enterprise solutions. NYC-based test automation consultants. Fixed-price packages with clear deliverables.",
+    keywords: [
+        "playwright migration cost",
+        "playwright consulting pricing",
+        "test automation services pricing",
+        "selenium migration cost",
+        "playwright implementation pricing"
+    ],
+    openGraph: {
+        title: "Pricing & Packages - Playwright Migration Services",
+        description: "Professional Playwright migration packages starting at $15k. Clear pricing, defined deliverables, and comprehensive support.",
+        url: "https://playwrightlab.io/pricing",
+    },
+    alternates: {
+        canonical: "https://playwrightlab.io/pricing",
+    },
 };
 
 const pricingTiers = [
@@ -82,6 +98,8 @@ export default function PricingPage() {
     return (
         <main className="min-h-screen bg-black text-white py-24">
             <div className="container mx-auto px-6 max-w-7xl">
+                <Breadcrumbs items={[{ label: "Pricing" }]} />
+                
                 {/* Header */}
                 <div className="text-center mb-16 max-w-3xl mx-auto">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display">

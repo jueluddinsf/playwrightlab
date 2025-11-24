@@ -15,34 +15,43 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : 'https://playwrightlab.io'),
   title: {
-    default: "Playwright Migration Services | Hire Expert Consultants | PlaywrightLab",
+    default: "Playwright Migration Services | Expert Test Automation Consultants NYC",
     template: "%s | PlaywrightLab"
   },
-  description: "Hire Playwright migration experts. We migrate Selenium & Cypress to Playwright in 4-6 weeks. 70% faster tests, 80% fewer flaky tests. Free audit for qualified teams.",
+  description: "Professional Playwright migration services for Selenium and Cypress test suites. NYC-based consultants specializing in test automation, CI/CD integration, and team training. Get expert assessment.",
   keywords: [
     // High-intent commercial keywords
-    "hire playwright consultant",
     "playwright migration services",
-    "selenium to playwright migration company",
-    "playwright consulting services",
-    "test automation migration experts",
+    "hire playwright consultant",
+    "playwright consulting nyc",
+    "selenium to playwright migration",
+    "cypress to playwright migration",
+    "test automation consultant",
+    "playwright migration agency",
     // Problem-focused keywords
     "fix flaky selenium tests",
-    "speed up e2e tests",
     "reduce test execution time",
-    // Solution keywords
-    "playwright migration agency",
+    "test automation migration",
     "playwright implementation services",
-    "e2e test automation consultancy"
+    // Location keywords
+    "playwright consultant nyc",
+    "test automation services new york",
+    // Technical keywords
+    "playwright training",
+    "e2e test automation",
+    "playwright ci cd integration",
+    "playwright page object model"
   ],
   authors: [{ name: "PlaywrightLab Team" }],
   creator: "PlaywrightLab LLC",
+  publisher: "PlaywrightLab LLC",
+  category: "Technology",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://playwrightlab.io",
-    title: "Hire Playwright Migration Experts | 4-6 Week Migrations",
-    description: "Professional Playwright migration services. Migrate 500+ tests in 4-6 weeks. Reduce runtime by 70%, eliminate flaky tests. Free audit.",
+    title: "Professional Playwright Migration Services | NYC Test Automation Experts",
+    description: "Expert Playwright migration and test automation consulting. NYC-based team specializing in Selenium/Cypress migrations, CI/CD integration, and developer training.",
     siteName: "PlaywrightLab",
     images: [
       {
@@ -55,8 +64,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hire Playwright Migration Experts | PlaywrightLab",
-    description: "Migrate Selenium/Cypress to Playwright in 4-6 weeks. 70% faster tests. Free audit for qualified teams.",
+    title: "Playwright Migration Services | NYC Test Automation Consultants",
+    description: "Expert Playwright migration services for Selenium/Cypress test suites. NYC-based consultants with comprehensive training and support.",
     images: ["/og-image.png"],
     creator: "@playwrightlab",
   },
@@ -70,6 +79,14 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  alternates: {
+    canonical: "https://playwrightlab.io",
+  },
+  verification: {
+    google: "your-google-verification-code", // Add your actual code
+    // yandex: "your-yandex-verification-code",
+    // bing: "your-bing-verification-code",
   },
 };
 

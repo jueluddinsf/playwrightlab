@@ -2,8 +2,23 @@ import { Metadata } from "next";
 import { TrendingUp, Clock, Users, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Case Studies | PlaywrightLab Success Stories",
-    description: "Example Playwright migration scenarios showing typical results. See how companies can benefit from test migration projects.",
+    title: "Migration Examples & Case Studies | Playwright Projects",
+    description: "Real-world Playwright migration scenarios from FinTech, E-Commerce, and SaaS companies. See typical challenges, solutions, and outcomes from test automation projects. Client details anonymized.",
+    keywords: [
+        "playwright migration case study",
+        "selenium to playwright examples",
+        "test automation migration results",
+        "playwright success stories",
+        "test migration case studies"
+    ],
+    openGraph: {
+        title: "Migration Examples & Case Studies - PlaywrightLab",
+        description: "Example Playwright migration scenarios showing typical challenges and results across different industries.",
+        url: "https://playwrightlab.io/case-studies",
+    },
+    alternates: {
+        canonical: "https://playwrightlab.io/case-studies",
+    },
 };
 
 const caseStudies = [

@@ -231,9 +231,35 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         };
     }
 
+    // Extract first paragraph as description
+    const contentLines = post.content.split('\n').filter((line: string) => line.trim() && !line.startsWith('#'));
+    const description = contentLines[0]?.substring(0, 155) + '...' || post.title;
+
     return {
         title: `${post.title} | PlaywrightLab Blog`,
-        description: post.content.substring(0, 160),
+        description: description,
+        keywords: [
+            slug.split('-').join(' '),
+            'playwright',
+            'test automation',
+            post.category.toLowerCase()
+        ],
+        openGraph: {
+            title: post.title,
+            description: description,
+            url: `https://playwrightlab.io/blog/${slug}`,
+            type: 'article',
+            publishedTime: post.date,
+            authors: ['PlaywrightLab Team'],
+        },
+        alternates: {
+            canonical: `https://playwrightlab.io/blog/${slug}`,
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: post.title,
+            description: description,
+        },
     };
 }
 

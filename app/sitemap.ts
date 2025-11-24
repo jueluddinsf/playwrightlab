@@ -1,54 +1,64 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+    const baseUrl = 'https://playwrightlab.io';
+    
     const blogPosts = [
         'selenium-to-playwright-migration-guide',
         'why-e2e-tests-are-flaky',
-        'playwright-vs-cypress-benchmark-2025',
     ];
 
-    return [
+    const routes = [
         {
-            url: 'https://playwrightlab.com',
+            url: baseUrl,
             lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 1,
+            changeFrequency: 'weekly' as const,
+            priority: 1.0,
         },
         {
-            url: 'https://playwrightlab.com/pricing',
+            url: `${baseUrl}/pricing`,
             lastModified: new Date(),
-            changeFrequency: 'monthly',
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/why-hire-us`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/schedule`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
             priority: 0.95,
         },
         {
-            url: 'https://playwrightlab.com/why-hire-us',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.9,
-        },
-        {
-            url: 'https://playwrightlab.com/blog',
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        ...blogPosts.map((slug) => ({
-            url: `https://playwrightlab.com/blog/${slug}`,
+            url: `${baseUrl}/case-studies`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
             priority: 0.8,
-        })),
-        {
-            url: 'https://playwrightlab.com/case-studies',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.9,
         },
         {
-            url: 'https://playwrightlab.com/resources',
+            url: `${baseUrl}/blog`,
             lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.7,
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
         },
-    ]
+        {
+            url: `${baseUrl}/resources`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.6,
+        },
+    ];
+
+    const blogRoutes = blogPosts.map((slug) => ({
+        url: `${baseUrl}/blog/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
+
+    return [...routes, ...blogRoutes];
 }
