@@ -63,6 +63,14 @@
   animation: crawl 0.4s ease-in-out infinite;
 }
 
+/* Prevent scrolling when tapping bugs on mobile */
+.touch-none {
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);

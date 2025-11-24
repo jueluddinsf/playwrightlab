@@ -15,11 +15,23 @@ interface Bug {
 export default function BugSquasher() {
   const [bugs, setBugs] = useState<Bug[]>([]);
   const [score, setScore] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Spawn bugs randomly
+    // Detect mobile device
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  useEffect(() => {
+    // Spawn bugs randomly - fewer on mobile
+    const maxBugs = isMobile ? 3 : 5;
     const spawnInterval = setInterval(() => {
-      if (bugs.length < 5) {
+      if (bugs.length < maxBugs) {
         const newBug: Bug = {
           id: Date.now(),
           x: Math.random() * 90, // 0-90% to keep bugs on screen
@@ -34,7 +46,7 @@ export default function BugSquasher() {
     }, 3000); // Spawn new bug every 3 seconds
 
     return () => clearInterval(spawnInterval);
-  }, [bugs.length]);
+  }, [bugs.length, isMobile]);
 
   useEffect(() => {
     // Animate bugs crawling
@@ -88,10 +100,10 @@ export default function BugSquasher() {
 
   return (
     <>
-      {/* Score counter */}
-      <div className="fixed top-24 right-6 z-50 bg-playwright/20 backdrop-blur-sm border border-playwright/30 rounded-lg px-4 py-2">
-        <div className="text-sm text-playwright/70">Bugs Squashed</div>
-        <div className="text-2xl font-bold text-playwright">{score}</div>
+      {/* Score counter - Responsive positioning */}
+      <div className="fixed top-20 right-3 sm:top-24 sm:right-6 z-50 bg-playwright/20 backdrop-blur-sm border border-playwright/30 rounded-lg px-3 py-1.5 sm:px-4 sm:py-2">
+        <div className="text-xs sm:text-sm text-playwright/70">Bugs Squashed</div>
+        <div className="text-xl sm:text-2xl font-bold text-playwright">{score}</div>
       </div>
 
       {/* Bugs */}
@@ -99,7 +111,11 @@ export default function BugSquasher() {
         <div
           key={bug.id}
           onClick={() => !bug.squashed && squashBug(bug.id)}
-          className={`fixed z-40 cursor-pointer transition-all duration-100 ${
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            if (!bug.squashed) squashBug(bug.id);
+          }}
+          className={`fixed z-40 cursor-pointer touch-none select-none transition-all duration-100 ${
             bug.falling ? 'animate-fall' : ''
           }`}
           style={{
@@ -115,16 +131,16 @@ export default function BugSquasher() {
           }}
         >
           {bug.squashed ? (
-            // Squashed bug
-            <div className="relative w-16 h-16 text-6xl">💥</div>
+            // Squashed bug - Responsive size
+            <div className="relative w-12 h-12 sm:w-16 sm:h-16 text-5xl sm:text-6xl">💥</div>
           ) : (
-            // Live cockroach
+            // Live cockroach - Responsive size with larger tap target
             <div className="relative group">
-              <div className="text-5xl hover:scale-110 transition-transform animate-crawl">
+              <div className="text-4xl sm:text-5xl active:scale-90 transition-transform animate-crawl p-2 -m-2">
                 🪳
               </div>
-              {/* Tooltip on hover */}
-              <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-red-500 text-white text-sm px-3 py-1.5 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              {/* Tooltip on hover - hidden on mobile, shown on desktop */}
+              <div className="hidden sm:block absolute -top-10 left-1/2 -translate-x-1/2 bg-red-500 text-white text-sm px-3 py-1.5 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
                 Click to squash!
               </div>
             </div>
@@ -132,14 +148,15 @@ export default function BugSquasher() {
         </div>
       ))}
 
-      {/* Instructions - show once */}
+      {/* Instructions - show once - Mobile responsive */}
       {bugs.length === 1 && score === 0 && (
-        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-playwright/90 backdrop-blur-md border border-playwright rounded-xl p-6 animate-pulse">
+        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-playwright/90 backdrop-blur-md border border-playwright rounded-xl p-4 sm:p-6 animate-pulse max-w-[90vw] sm:max-w-none mx-4">
           <div className="text-center">
-            <div className="text-5xl mb-2 animate-crawl">🪳</div>
-            <div className="text-lg font-bold mb-1">Found a Bug!</div>
-            <div className="text-sm text-white/70">
-              Click to squash it before it crawls away
+            <div className="text-4xl sm:text-5xl mb-2 animate-crawl">🪳</div>
+            <div className="text-base sm:text-lg font-bold mb-1">Found a Bug!</div>
+            <div className="text-xs sm:text-sm text-white/70">
+              <span className="sm:hidden">Tap to squash it!</span>
+              <span className="hidden sm:inline">Click to squash it before it crawls away</span>
             </div>
           </div>
         </div>
