@@ -13,6 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : 'https://playwrightlab.com'),
   title: {
     default: "PlaywrightLab LLC | High-Velocity Automation Migrations",
     template: "%s | PlaywrightLab LLC"
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "PlaywrightLab LLC",
     images: [
       {
-        url: "/og-image.png", // We'll need to ensure this exists or use a placeholder
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "PlaywrightLab LLC - Automation Experts",

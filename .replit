@@ -1,12 +1,50 @@
 run = "npm install && npm run dev"
 entrypoint = "app/page.tsx"
+modules = ["nodejs-20"]
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "npm install && npm run build && npm start"]
+run = ["npm", "start"]
+deploymentTarget = "autoscale"
+build = ["npm", "run", "build"]
 
 [env]
+
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 40899
+externalPort = 3000
 # Set environment variables if needed
 # NODE_ENV = "development"
