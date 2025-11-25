@@ -40,7 +40,7 @@ export default function JsonLd() {
                 "name": "PlaywrightLab",
                 "image": "https://playwrightlab.io/logo.png",
                 "url": "https://playwrightlab.io",
-                "telephone": "Contact via website",
+                "telephone": "+1-555-0123", // TODO: Update with real number
                 "priceRange": "$$$",
                 "address": {
                     "@type": "PostalAddress",

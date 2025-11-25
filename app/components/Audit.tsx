@@ -41,10 +41,13 @@ export default function Audit() {
 
                     <a
                         href="/schedule"
-                        className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-orange rounded-full hover:bg-orange/90 transition-all hover:scale-105 shadow-[0_0_30px_-10px_rgba(255,87,34,0.6)]"
+                        className="relative inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-orange rounded-full hover:bg-orange/90 transition-all hover:scale-105 shadow-[0_0_30px_-10px_rgba(255,87,34,0.6)] group"
                     >
-                        Request an Assessment
-                        <ArrowRight size={18} />
+                        <span className="absolute inset-0 rounded-full bg-orange opacity-50 animate-ping group-hover:animate-none"></span>
+                        <span className="relative flex items-center gap-2">
+                            Request an Assessment
+                            <ArrowRight size={18} />
+                        </span>
                     </a>
                 </motion.div>
 

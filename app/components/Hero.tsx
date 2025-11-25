@@ -31,24 +31,45 @@ export default function Hero() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-playwright mb-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-playwright mb-6"
+                    >
                         <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-playwright opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-playwright"></span>
                         </span>
                         NYC-Based Test Automation Specialists
-                    </div>
+                    </motion.div>
 
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4 sm:mb-6 font-display leading-tight">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3, duration: 0.5 }}
+                        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4 sm:mb-6 font-display leading-tight"
+                    >
                         Stop Debugging <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange">Flaky Tests.</span>
-                    </h1>
+                    </motion.h1>
 
-                    <p className="text-base sm:text-lg md:text-xl text-zinc-400 mb-6 sm:mb-8 max-w-lg leading-relaxed">
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4, duration: 0.5 }}
+                        className="text-base sm:text-lg md:text-xl text-zinc-400 mb-6 sm:mb-8 max-w-lg leading-relaxed"
+                    >
                         Expert migration services from Selenium/Cypress to <span className="text-white font-semibold">Playwright</span>.
                         We help engineering teams build reliable, maintainable test automation.
-                    </p>
+                    </motion.p>
 
-                    <div className="flex flex-col sm:flex-row gap-4">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.5, duration: 0.5 }}
+                        className="flex flex-col sm:flex-row gap-4"
+                    >
                         <Link
                             href="#audit"
                             className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-orange rounded-full hover:bg-orange/90 transition-all hover:scale-105 shadow-[0_0_30px_-10px_rgba(255,87,34,0.6)]"
@@ -62,9 +83,14 @@ export default function Hero() {
                         >
                             View Service Plans
                         </Link>
-                    </div>
+                    </motion.div>
 
-                    <div className="mt-8 sm:mt-12 flex flex-wrap items-center gap-4 sm:gap-8 text-xs sm:text-sm text-zinc-500">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.8, duration: 0.5 }}
+                        className="mt-8 sm:mt-12 flex flex-wrap items-center gap-4 sm:gap-8 text-xs sm:text-sm text-zinc-500"
+                    >
                         <div className="flex items-center gap-2">
                             <Check size={16} className="text-playwright flex-shrink-0" />
                             <span>Reduced Flakiness</span>
@@ -73,7 +99,7 @@ export default function Hero() {
                             <Check size={16} className="text-playwright flex-shrink-0" />
                             <span>Faster Test Execution</span>
                         </div>
-                    </div>
+                    </motion.div>
                 </motion.div>
 
                 <motion.div
@@ -98,7 +124,7 @@ try {
                         />
 
                         <div className="flex justify-center -my-3 relative z-20">
-                            <div className="bg-zinc-900 border border-zinc-800 p-2 rounded-full">
+                            <div className="bg-zinc-900 border border-zinc-800 p-2 rounded-full shadow-xl">
                                 <ArrowRight className="text-zinc-500 rotate-90" />
                             </div>
                         </div>
@@ -117,8 +143,8 @@ await expect(page).toHaveURL('/dashboard');
                     </div>
 
                     {/* Decorative Elements */}
-                    <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-playwright to-emerald-500 rounded-full blur-[60px] opacity-20" />
-                    <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-gradient-to-br from-orange to-red-500 rounded-full blur-[60px] opacity-20" />
+                    <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-playwright to-emerald-500 rounded-full blur-[60px] opacity-20 animate-pulse" />
+                    <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-gradient-to-br from-orange to-red-500 rounded-full blur-[60px] opacity-20 animate-pulse" />
                 </motion.div>
             </div>
         </section>

@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     canonical: "https://playwrightlab.io",
   },
   verification: {
-    google: "your-google-verification-code", // Add your actual code
+    google: "google-site-verification=PLACEHOLDER_CODE", // TODO: User to replace with actual code
     // yandex: "your-yandex-verification-code",
     // bing: "your-bing-verification-code",
   },
