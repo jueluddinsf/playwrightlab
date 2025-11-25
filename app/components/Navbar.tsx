@@ -38,7 +38,9 @@ export default function Navbar() {
         className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 border-b border-white/10 bg-black/50 backdrop-blur-xl supports-[backdrop-filter]:bg-black/20"
       >
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-playwright to-orange rounded-lg" />
+          <div className="relative w-8 h-8 rounded-lg overflow-hidden">
+            <img src="/logo.png" alt="PlaywrightLab Logo" className="w-full h-full object-cover" />
+          </div>
           <span className="text-xl font-bold tracking-tight text-white font-display">
             PlaywrightLab
           </span>
